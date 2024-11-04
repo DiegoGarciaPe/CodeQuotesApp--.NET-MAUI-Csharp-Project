@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="CodeQuotes.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <Grid x:Name="background">
+
+        <Grid.Background>
+
+            <LinearGradientBrush EndPoint="1,1">
+
+                <GradientStopCollection>
+
+                    <GradientStop Offset="0" Color="DarkBlue" />
+                    <GradientStop Offset=".25" Color="DarkCyan" />
+                    <GradientStop Offset="0.5" Color="LightBlue" />
+                    <GradientStop Offset="0.75" Color="LightBlue" />
+                    <GradientStop Offset="1" Color="LightBlue" />
+
+                </GradientStopCollection>
+
+            </LinearGradientBrush>
+
+        </Grid.Background>
+
+        <Grid Margin="25" RowDefinitions=".8*,.2*">
+
+            <Label
+                x:Name="quote"
+                FontFamily="MainFont"
+                FontSize="50"
+                HorizontalTextAlignment="Center"
+                Text="No hay que ir para atrás ni para darse impulso. - Lao Tsé"
+                TextColor="White"
+                VerticalOptions="Center" />
+            <Button
+                x:Name="btnGenerateQuote"
+                Grid.Row="1"
+                Background="Black"
+                Clicked="btnGenerateQuote_Clicked"
+                CornerRadius="25"
+                Opacity=".4"
+                Text="Nueva Frase" />
+
+        </Grid>
+
+    </Grid>
+
+</ContentPage>
